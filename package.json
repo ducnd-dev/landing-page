@@ -1,0 +1,71 @@
+{
+  "name": "admin",
+  "description": "Boilerplate Repository with FAST load time using vite and untility css using tailwind css support.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "husky install",
+    "serve": "vite",
+    "build": "vite build",
+    "build:prod": "vite build --mode prod",
+    "lint": "eslint --fix --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayank30/vite-tailwind-vue2"
+  },
+  "author": "Mayank Jhawar <mayankjhawar18@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "template",
+    "javascript",
+    "vue 2.x",
+    "vite",
+    "tailwind",
+    "css"
+  ],
+  "dependencies": {
+    "aos": "^2.3.4",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "postcss": "^8.4.12",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.1",
+    "rollup-plugin-visualizer": "^5.6.0",
+    "tailwindcss": "^3.0.23",
+    "unplugin-vue-components": "^0.18.4",
+    "vite": "^2.8.6",
+    "vite-plugin-eslint": "^1.3.0",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue-template-compiler": "^2.6.14",
+    "vue-typer": "^1.2.0"
+  },
+  "lint-staged": {
+    "**/**.{js,json,vue,ts}": [
+      "eslint --fix --ignore-path .gitignore",
+      "pretty-quick --staged --ignore-path .gitignore"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
